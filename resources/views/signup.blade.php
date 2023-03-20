@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Signup</title>
   @vite('resources/css/app.css')
 </head>
 <body>
@@ -38,44 +38,42 @@
   
                     <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
   
-                    
-                    <div class="form-outline mb-4">
-                      <input type="text" id="fname" name="fname" class="form-control form-control-lg" required/>
+                     <div class="form-outline mb-4">
+                      <input type="text" id="fname" name="fname" class="form-control form-control-lg" value="{{ old('fname') }}" required/>
                       <label class="form-label" for="fname">First Name</label>
                     </div>
 
                     <div class="form-outline mb-4">
-                      <input type="text" id="mname" name="mname" class="form-control form-control-lg" />
+                      <input type="text" id="mname" name="mname" class="form-control form-control-lg" value="{{ old('mname') }}"  />
                       <label class="form-label" for="mname">Middle Name</label>
                     </div>
-                    
+
                     <div class="form-outline mb-4">
-                      <input type="text" id="lname" name="lname" class="form-control form-control-lg" required/>
+                      <input type="text" id="lname" name="lname" class="form-control form-control-lg" value="{{ old('lname') }}" required/>
                       <label class="form-label" for="lname">Last Name</label>
                     </div>
 
                     <div class="form-outline mb-4">
-                      <input type="email" id="email" name="email" class="form-control form-control-lg" required/>
+                      <input type="email" id="email" name="email" class="form-control form-control-lg" value="{{ old('email') }}" required/>
                       <label class="form-label" for="email">Email address</label>
                     </div>
-                    
+  
                     <div class="form-outline mb-4">
-                      <input type="password" id="password" name="password" class="form-control form-control-lg" required/>
+                      <input type="password" id="password" name="password" class="form-control form-control-lg" value="{{ old('password') }}" required/>
                       <label class="form-label" for="password">Password</label>
                     </div>
-                    
+
                     <div class="form-outline mb-4">
-                      <input type="password" id="password_confirmation" name="password_confirmation" class="form-control form-control-lg" required/>
+                      <input type="password" id="password_confirmation" name="password_confirmation" class="form-control form-control-lg" value="{{ old('password_confirmation') }}" required/>
                       <label class="form-label" for="password_confirmation">Verify Password</label>
                     </div>
   
                     <div class="pt-1 mb-4">
                       <button class="btn btn-dark btn-lg btn-block" type="submit">Save</button>
                     </div>
-  
-                    <a class="small text-muted" href="#!">Forgot password?</a>
-                    <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? 
-                      <a href="{{ route('login') }}"
+
+                    <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account?
+                       <a href="{{ route('login') }}"
                         style="color: #393f81;">Back to login</a></p>
                     <a href="#!" class="small text-muted">Terms of use.</a>
                     <a href="#!" class="small text-muted">Privacy policy</a>
