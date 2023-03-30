@@ -37,6 +37,10 @@ class authController extends Controller
         return view('signup');
     }
 
+    public function home(){
+        return view('home');
+    }
+
     public function register(Request $request){
         $validated = $request->validate([
             'fname' => 'required|min:2',

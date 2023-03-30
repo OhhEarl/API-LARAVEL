@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\authController;
 use App\Http\Controllers\homeController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +21,6 @@ Route::post('/logmein', [authController::class, 'logmein'])->name('logmein');
 Route::get('/signup', [authController::class, 'signup'])->name('signup');
 Route::post('/register', [authController::class, 'register'])->name('register');
 
-Route::get('/home', [homeController::class, 'index'])->name('home');
 
+Route::get('/home', [homeController::class, 'index'])->name('home');
 
