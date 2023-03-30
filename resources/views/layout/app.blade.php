@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Home</title>
   @vite('resources/css/app.css')
 </head>
 <body>
@@ -46,12 +46,9 @@
       </div>
     </nav>
     <div class="container">
-      <div class="row">
-        @yield('content')
-      </div>
+      @yield('content')
     </div>
   </div>
+  <script type="text/javascript" src="{{ asset('scripts/home.js') }}"></script>
 </body>
-<script type="text/javascript" src="{{ asset('scripts/home.js') }}"></script>
-
 </html>

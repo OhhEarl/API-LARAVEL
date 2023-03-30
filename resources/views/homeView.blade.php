@@ -20,14 +20,14 @@
         <div class="input-group">
           <textarea class="form-control" id="user_text_input" aria-label="With textarea"></textarea>          
         </div>
-        <button class="btn btn-primary mt-3" onclick="addPost()" >Post</button>
+        <button class="btn btn-primary mt-3" onclick="createPost()" >Post</button>
       </div>
     </div>
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Post</h5>
         <h6 class="card-subtitle mb-2 text-muted">Post title</h6>
-        <p class="card-text" id="posts_text">post text</p>
+        <p class="card-text" id="post_text" style="cursor: pointer;" title="click to delete" onclick="clearPost()">post text</p>
         <a href="#" class="card-link">Card link</a>
         <a href="#" class="card-link">Another link</a>
       </div>
