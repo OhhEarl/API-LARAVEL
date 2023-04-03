@@ -22,5 +22,6 @@ Route::get('/signup', [authController::class, 'signup'])->name('signup');
 Route::post('/register', [authController::class, 'register'])->name('register');
 
 Route::get('/home', [homeController::class, 'index'])->name('home');
+Route::get('/insertPost/{text}', [homeController::class, 'insertPost']);
 
 
