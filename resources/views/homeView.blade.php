@@ -23,9 +23,7 @@
         <button class="btn btn-primary mt-3" onclick="createPost()" >Post</button>
       </div>
     </div>
-   <div id="postHere">
-    
-   </div>
+   <div id="postHere"></div>
   </div>
   <div class="col col2">
     <div class="card">

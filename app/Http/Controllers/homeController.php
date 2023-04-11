@@ -8,15 +8,20 @@ use Illuminate\Support\Facades\DB;
 
 class homeController extends Controller
 {
-    public function index(){
+    public function index(Request $request){
+
         return view('homeView');
     }
 
-    public function insertPost($text){
+    public function insertPost(Request $request,$text){
+        
+        $userData = $request->session()->pull('user');
+
         $insertToPost = DB::table('posts')->insert([
             'post' =>$text,
-            'user'=>1
+            'user'=>$userData->id
         ]);
+        
         return view('newPost' , compact('text'));
     }
 }
